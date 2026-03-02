@@ -1,0 +1,25 @@
+{
+  "name": "coding_training",
+  "version": "1.0.0",
+  "description": "coding HWs",
+  "homepage": "https://github.com/mishasashuk/QAJ15_HW-TSCoding#readme",
+  "bugs": {
+    "url": "https://github.com/mishasashuk/QAJ15_HW-TSCoding/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishasashuk/QAJ15_HW-TSCoding.git"
+  },
+  "license": "ISC",
+  "author": "mishasashuk@gmail.com",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
