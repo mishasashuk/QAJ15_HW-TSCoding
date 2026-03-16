@@ -15,4 +15,31 @@
 
 import { readFileSync } from 'fs';
 
-const users: User[] = JSON.parse(readFileSync('users.json', 'utf8'));
+const user: User[] = JSON.parse(readFileSync('user.json', 'utf8'));
+
+type User = {
+  id: number;
+  username: string;
+  role: string;
+};
+
+type Result = {
+  [role: string]: {
+    count: number;
+    users: Omit<User, 'role'>[];
+  };
+};
+
+const groupedUsers = user.reduce<Result>((acc, { role, id, username }) => {
+  if (!acc[role]) {
+    acc[role] = { count: 0, users: [] };
+  }
+  acc[role].count++;
+  acc[role].users.push({ id, username });
+  return acc;
+}, {});
+
+// Вывод через console.dir
+console.dir(groupedUsers, {
+  depth: null
+});
