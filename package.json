@@ -1,0 +1,26 @@
+{
+  "name": "coding_training",
+  "version": "1.0.0",
+  "description": "coding HWs",
+  "homepage": "https://github.com/mishasashuk/QAJ15_HW-TSCoding#readme",
+  "bugs": {
+    "url": "https://github.com/mishasashuk/QAJ15_HW-TSCoding/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishasashuk/QAJ15_HW-TSCoding.git"
+  },
+  "license": "ISC",
+  "author": "mishasashuk@gmail.com",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "formatting": "npx prettier --write ."
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
