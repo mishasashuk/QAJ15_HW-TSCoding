@@ -15,7 +15,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "formatting": "npx prettier --write ."
+    "formatting": "npx prettier --write .",
+    "test": "mocha --config mocha/config/.mocharc"
   },
   "devDependencies": {
     "@types/chai": "^5.2.3",
